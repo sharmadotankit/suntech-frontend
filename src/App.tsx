@@ -20,6 +20,11 @@ import InvoiceRegister from './routes/InvoiceRegister/InvoiceRegister';
 import SiteVisitsRegister from './routes/SiteVisitsRegister/SiteVisitsRegister';
 import OutwardsRegister from './routes/OutwardsRegister/OutwardsRegister';
 import CompanyRegister from './routes/CompanyRegister/CompanyRegister';
+import AddEditClient from './routes/AddEditClient/AddEditClient';
+import OfferLetterRegister from './routes/OfferLetterRegister/OfferLetterRegister';
+import ProjectsRegister from './routes/ProjectsRegister/ProjectsRegister';
+import ExpensesRegister from './routes/ExpensesRegister/ExpensesRegister';
+import LeaveRecords from './routes/LeaveRecords/LeaveRecords';
 
 function App() {
   const [isServerConnected, setIsServerConnected] = useState(true);
@@ -49,6 +54,12 @@ function App() {
                 <Route path="/company/site-visits-register" element={<SiteVisitsRegister />} />
                 <Route path="/company/outward-register" element={<OutwardsRegister />} />
                 <Route path="/company/company-register" element={<CompanyRegister />} />
+                <Route path="/company/offer-letters" element={<OfferLetterRegister />} />
+                <Route path="/company/projects" element={<ProjectsRegister />} />
+                <Route path="/company/expenses" element={<ExpensesRegister />} />
+                <Route path="/company/leave-record" element={<LeaveRecords />} />
+                <Route path="/company/add-edit-client" element={<AddEditClient/>} />
+                <Route path="/company/add-edit-client/:clientId" element={<AddEditClient/>} />
               </Route>
             {/* </Route> */}
           </Routes>

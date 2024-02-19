@@ -1,7 +1,7 @@
 const CompanyRegister = () => {
     return (
       <div >
-        <h1 className="text-center text-4xl font-bold mb-4" style={{ fontFamily: 'Orbitron, sans-serif' }}>Add Company</h1>
+        <h1 className="text-center text-4xl font-bold mb-4" style={{ fontFamily: 'Orbitron, sans-serif' }}>Company Details</h1>
         <div className="p-2">
           <div >
             <div className="w-full lg:w-1/2 px-2 mb-4">

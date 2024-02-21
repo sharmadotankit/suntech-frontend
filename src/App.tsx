@@ -25,6 +25,7 @@ import OfferLetterRegister from './routes/OfferLetterRegister/OfferLetterRegiste
 import ProjectsRegister from './routes/ProjectsRegister/ProjectsRegister';
 import ExpensesRegister from './routes/ExpensesRegister/ExpensesRegister';
 import LeaveRecords from './routes/LeaveRecords/LeaveRecords';
+import AddEditOffer from "./routes/AddEditOffer/AddEditOffer";
 
 function App() {
   const [isServerConnected, setIsServerConnected] = useState(true);
@@ -60,6 +61,8 @@ function App() {
                 <Route path="/company/leave-record" element={<LeaveRecords />} />
                 <Route path="/company/add-edit-client" element={<AddEditClient/>} />
                 <Route path="/company/add-edit-client/:clientId" element={<AddEditClient/>} />
+                <Route path="/company/add-edit-offer" element={<AddEditOffer/>} />
+                <Route path="/company/add-edit-offer/:offerId" element={<AddEditOffer/>} />
               </Route>
             {/* </Route> */}
           </Routes>

@@ -1,3 +1,5 @@
+import { OFFER_ACTIONS } from "./actions";
+
 export type InitialStateType ={
     companyName: string;
     scopeOfWork: string;
@@ -10,5 +12,12 @@ export type InitialStateType ={
     otherTermsAndConditions: string;
 }
 
-export type ActionType = 'UPDATE_TITLE' | 'UPDATE_DESCRIPTION' | 'RESET';
+export interface ActionType {
+    type: string;
+    payload?: any;
+  }
+
+
+
   
+

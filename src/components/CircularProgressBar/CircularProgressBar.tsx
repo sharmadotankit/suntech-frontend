@@ -18,7 +18,7 @@ const CircularProgressBar: React.FC<CircularProgressBarProps> = ({ amountInvoice
         {percentage.toFixed(0)}%
       </div>
       <div
-        className={`absolute inset-0 border-4 border-transparent rounded-full ${percentage === 100 ? 'border-amber-400' : 'border-amber-800'}`}
+        className={`absolute inset-0 border-4 border-amber-600 rounded-full ${percentage === 100 ? 'border-amber-400' : 'border-amber-800'}`}
         style={{
           clipPath: clipPathValue,
           transition: 'clip-path 0.5s ease', // Apply transition to clip-path

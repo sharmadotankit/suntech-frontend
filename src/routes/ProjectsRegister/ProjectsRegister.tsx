@@ -11,7 +11,7 @@ const ProjectsRegister = () => {
       <h1 className="text-center text-4xl font-bold mb-4" style={{ fontFamily: 'Orbitron, sans-serif' }}>Projects</h1>
       <div className="p-2 ">
         <div className="absolute top-0 right-0 mt-4 mr-4">
-          <Link to={`/company/projects/add-edit-project`} className="bg-amber-500 text-white px-4 py-2 rounded-md hover:bg-amber-600 p-3 cursor-pointer hover:bg-amber-500 transition duration-100 ease-in-out block">
+          <Link to={`/company/add-edit-project`} className="bg-amber-500 text-white px-4 py-2 rounded-md hover:bg-amber-600 p-3 cursor-pointer hover:bg-amber-500 transition duration-100 ease-in-out block">
             Create +
           </Link>
 

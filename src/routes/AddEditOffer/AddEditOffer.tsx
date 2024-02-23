@@ -238,7 +238,7 @@ const AddEditOffer = () => {
                     <button className="bg-amber-500 text-white px-4 py-1 rounded-md hover:bg-amber-600 cursor-pointer hover:bg-amber-500 transition duration-100 ease-in-out">Copy from</button>
                 </div>
 
-                <textarea className="shadow appearance-none h-[450px] border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                <textarea className="shadow appearance-none h-[300px] border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     id="other-terms-and-conditions"
                     placeholder="Other terms and conditions"
                     value={offerLetterState.otherTermsAndConditions} />
@@ -265,6 +265,10 @@ const AddEditOffer = () => {
                 <p>Authorized Signatory</p>
             </div>
 
+
+            <div className="flex justify-center">
+            <button className="bg-amber-500 text-white px-4 py-2 rounded-md hover:bg-amber-600 cursor-pointer hover:bg-amber-500 transition duration-100 ease-in-out mt-10 font-bold">Create Offer</button>
+            </div>
         </div>)
     );
 }

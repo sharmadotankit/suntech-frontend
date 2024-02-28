@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router} from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
+import '@fortawesome/fontawesome-free/css/all.css'; 
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

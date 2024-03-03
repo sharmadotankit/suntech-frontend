@@ -57,7 +57,7 @@ const AddEditClient = () => {
             <div className="mb-4 md:flex md:items-center">
               <div className="md:w-1/3">
                 <label
-                  className="block text-gray-700 text-sm font-bold mb-2"
+                  className="block text-gray-700 text-xs font-bold mb-2"
                   htmlFor="account-no-1"
                 >
                   Client Code
@@ -72,7 +72,7 @@ const AddEditClient = () => {
             <div className="mb-4 md:flex md:items-center">
               <div className="md:w-1/3">
                 <label
-                  className="block text-gray-700 text-sm font-bold mb-2"
+                  className="block text-gray-700 text-xs font-bold mb-2"
                   htmlFor="account-no-1"
                 >
                   Client Name
@@ -88,7 +88,7 @@ const AddEditClient = () => {
               <div className="mb-4 md:flex md:items-center">
                 <div className="md:w-1/3">
                   <label
-                    className="block text-gray-700 text-sm font-bold mb-2"
+                    className="block text-gray-700 text-xs font-bold mb-2"
                     htmlFor="account-no-1"
                   >
                     GST No.
@@ -106,7 +106,7 @@ const AddEditClient = () => {
               <div className="mb-4 md:flex md:items-center">
                 <div className="md:w-1/3">
                   <label
-                    className="block text-gray-700 text-sm font-bold mb-2"
+                    className="block text-gray-700 text-xs font-bold mb-2"
                     htmlFor="account-no-1"
                   >
                     Billing Address
@@ -124,7 +124,7 @@ const AddEditClient = () => {
               <div className="mb-4 md:flex md:items-center">
                 <div className="md:w-1/3">
                   <label
-                    className="block text-gray-700 text-sm font-bold mb-2"
+                    className="block text-gray-700 text-xs font-bold mb-2"
                     htmlFor="account-no-1"
                   >
                     Shipping Address
@@ -143,7 +143,7 @@ const AddEditClient = () => {
               <div className="mb-4 md:flex md:items-center">
                 <div className="md:w-1/3">
                   <label
-                    className="block text-gray-700 text-sm font-bold mb-2"
+                    className="block text-gray-700 text-xs font-bold mb-2"
                     htmlFor="account-no-1"
                   >
                     Is Default
@@ -167,7 +167,7 @@ const AddEditClient = () => {
 
 
             <div className="overflow-x-auto mt-5 rounded-lg">
-              <table className="table-auto w-full text-sm">
+              <table className="table-auto w-full text-xs">
                 <thead>
                   <tr className="bg-amber-500 text-white">
                     <th className="border px-4 py-2">GST NO</th>
@@ -194,7 +194,7 @@ const AddEditClient = () => {
 
             <div>
               <label
-                className="block text-gray-700 text-sm font-bold mb-2 mt-2"
+                className="block text-gray-700 text-xs font-bold mb-2 mt-2"
                 htmlFor="account-no-1"
               >
                 Clients Documents:
@@ -248,7 +248,7 @@ const AddEditClient = () => {
               </button>
             </div>
 
-            <label className="block text-gray-700 text-sm font-bold mb-2 mt-2" htmlFor="address">Additional Data:</label>
+            <label className="block text-gray-700 text-xs font-bold mb-2 mt-2" htmlFor="address">Additional Data:</label>
             <textarea
               placeholder="Enter address"
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-6"

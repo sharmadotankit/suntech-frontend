@@ -42,24 +42,24 @@ const Dashboard = () => {
           </button>
         </div>
       </div>
-      <table className="min-w-full bg-amber-100 rounded-lg overflow-hidden text-sm">
+      <table className="min-w-full bg-amber-100 rounded-lg overflow-hidden text-xs">
         <thead className="bg-amber-500 text-white">
           <tr>
-            <th className="text-left py-3 px-4 uppercase font-semibold">Name</th>
-            <th className="text-left py-3 px-4 uppercase font-semibold">Email</th>
-            <th className="text-left py-3 px-4 uppercase font-semibold">Role</th>
+            <th className="text-left py-2 px-2 uppercase font-semibold">Name</th>
+            <th className="text-left py-2 px-2 uppercase font-semibold">Email</th>
+            <th className="text-left py-2 px-2 uppercase font-semibold">Role</th>
           </tr>
         </thead>
         <tbody className="divide-y divide-amber-300">
           <tr>
-            <td className="py-3 px-4">John Doe</td>
-            <td className="py-3 px-4">john@example.com</td>
-            <td className="py-3 px-4">Admin</td>
+            <td className="py-2 px-2">John Doe</td>
+            <td className="py-2 px-2">john@example.com</td>
+            <td className="py-2 px-2">Admin</td>
           </tr>
           <tr>
-            <td className="py-3 px-4">Jane Smith</td>
-            <td className="py-3 px-4">jane@example.com</td>
-            <td className="py-3 px-4">User</td>
+            <td className="py-2 px-2">Jane Smith</td>
+            <td className="py-2 px-2">jane@example.com</td>
+            <td className="py-2 px-2">User</td>
           </tr>
           {/* Add more rows as needed */}
         </tbody>

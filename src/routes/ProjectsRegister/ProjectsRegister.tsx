@@ -80,63 +80,63 @@ const ProjectsRegister = () => {
         </div>
 
       </div>
-      <table className="min-w-full bg-amber-100 rounded-lg overflow-hidden text-sm">
+      <table className="min-w-full bg-amber-100 rounded-lg overflow-hidden text-xs">
         <thead className="bg-amber-500 text-white">
           <tr>
-            <th className="text-left py-3 px-4 uppercase font-semibold">PROJECT NO</th>
-            <th className="text-left py-3 px-4 uppercase font-semibold">DESCRIPTION</th>
-            <th className="text-left py-3 px-4 uppercase font-semibold">PROJECT TYPE</th>
-            <th className="text-left py-3 px-4 uppercase font-semibold">CLIENT</th>
-            <th className="text-left py-3 px-4 uppercase font-semibold">ORDER VALUE</th>
-            <th className="text-left py-3 px-4 uppercase font-semibold">DATE OF WORK ORDER</th>
-            <th className="text-left py-3 px-4 uppercase font-semibold">WORK ORDER</th>
-            <th className="text-left py-3 px-4 uppercase font-semibold">SITE VISIT AMT</th>
-            <th className="text-left py-3 px-4 uppercase font-semibold">AMT INVOICED (work order+site visit)</th>
-            <th className="text-left py-3 px-4 uppercase font-semibold">AMT YET TO BE INVOICED (work order+site visit)</th>
-            <th className="text-left py-3 px-4 uppercase font-semibold">Location</th>
-            <th className="text-left py-3 px-4 uppercase font-semibold">Progress</th>
+            <th className="text-left py-2 px-2 uppercase font-semibold">PROJECT NO</th>
+            <th className="text-left py-2 px-2 uppercase font-semibold">DESCRIPTION</th>
+            <th className="text-left py-2 px-2 uppercase font-semibold">PROJECT TYPE</th>
+            <th className="text-left py-2 px-2 uppercase font-semibold">CLIENT</th>
+            <th className="text-left py-2 px-2 uppercase font-semibold">ORDER VALUE</th>
+            <th className="text-left py-2 px-2 uppercase font-semibold">DATE OF WORK ORDER</th>
+            <th className="text-left py-2 px-2 uppercase font-semibold">WORK ORDER</th>
+            <th className="text-left py-2 px-2 uppercase font-semibold">SITE VISIT AMT</th>
+            <th className="text-left py-2 px-2 uppercase font-semibold">AMT INVOICED (work order+site visit)</th>
+            <th className="text-left py-2 px-2 uppercase font-semibold">AMT YET TO BE INVOICED (work order+site visit)</th>
+            <th className="text-left py-2 px-2 uppercase font-semibold">Location</th>
+            <th className="text-left py-2 px-2 uppercase font-semibold">Progress</th>
           </tr>
         </thead>
         <tbody className="divide-y divide-amber-300">
           <tr>
-            <td className="py-3 px-4">
+            <td className="py-2 px-2">
               <Link to={`/company/projects/add-edit-project/123`}
                 className="text-blue-500 underline font-bold">
                 123
               </Link>
             </td>
-            <td className="py-3 px-4">SEGMENT LIFT GANTR</td>
-            <td className="py-3 px-4">TYPE</td>
-            <td className="py-3 px-4">EPL</td>
-            <td className="py-3 px-4">400000</td>
-            <td className="py-3 px-4">{moment().format('DD MMM YYYY')}</td>
-            <td className="py-3 px-4">(attachment)</td>
-            <td className="py-3 px-4">100000</td>
-            <td className="py-3 px-4">250000</td>
-            <td className="py-3 px-4">400000</td>
-            <td className="py-3 px-4">GUJRAT</td>
-            <td className="py-3 px-4">
+            <td className="py-2 px-2">SEGMENT LIFT GANTR</td>
+            <td className="py-2 px-2">TYPE</td>
+            <td className="py-2 px-2">EPL</td>
+            <td className="py-2 px-2">400000</td>
+            <td className="py-2 px-2">{moment().format('DD MMM YYYY')}</td>
+            <td className="py-2 px-2">(attachment)</td>
+            <td className="py-2 px-2">100000</td>
+            <td className="py-2 px-2">250000</td>
+            <td className="py-2 px-2">400000</td>
+            <td className="py-2 px-2">GUJRAT</td>
+            <td className="py-2 px-2">
               <CircularProgressBar amountInvoiced ={350} totalAmount={500}/>
             </td>
           </tr>
           <tr>
-            <td className="py-3 px-4">
+            <td className="py-2 px-2">
               <Link to={`/company/projects/add-edit-project/123`}
                 className="text-blue-500 underline font-bold">
                 123
               </Link>
             </td>
-            <td className="py-3 px-4">SEGMENT LIFT GANTR</td>
-            <td className="py-3 px-4">TYPE</td>
-            <td className="py-3 px-4">EPL</td>
-            <td className="py-3 px-4">400000</td>
-            <td className="py-3 px-4">{moment().format('DD MMM YYYY')}</td>
-            <td className="py-3 px-4">(attachment)</td>
-            <td className="py-3 px-4">100000</td>
-            <td className="py-3 px-4">250000</td>
-            <td className="py-3 px-4">400000</td>
-            <td className="py-3 px-4">GUJRAT</td>
-            <td className="py-3 px-4">
+            <td className="py-2 px-2">SEGMENT LIFT GANTR</td>
+            <td className="py-2 px-2">TYPE</td>
+            <td className="py-2 px-2">EPL</td>
+            <td className="py-2 px-2">400000</td>
+            <td className="py-2 px-2">{moment().format('DD MMM YYYY')}</td>
+            <td className="py-2 px-2">(attachment)</td>
+            <td className="py-2 px-2">100000</td>
+            <td className="py-2 px-2">250000</td>
+            <td className="py-2 px-2">400000</td>
+            <td className="py-2 px-2">GUJRAT</td>
+            <td className="py-2 px-2">
               <CircularProgressBar amountInvoiced ={200} totalAmount={500}/>
             </td>
           </tr>

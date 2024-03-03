@@ -49,38 +49,38 @@ const OfferLetterRegister = () => {
         </div>
 
       </div>
-      <table className="min-w-full bg-amber-100 rounded-lg overflow-hidden text-sm">
+      <table className="min-w-full bg-amber-100 rounded-lg overflow-hidden text-xs">
         <thead className="bg-amber-500 text-white">
           <tr>
-            <th className="text-left py-3 px-4 uppercase font-semibold">Offer Number</th>
-            <th className="text-left py-3 px-4 uppercase font-semibold">Description</th>
-            <th className="text-left py-3 px-4 uppercase font-semibold">Client</th>
-            <th className="text-left py-3 px-4 uppercase font-semibold">Date</th>
-            <th className="text-left py-3 px-4 uppercase font-semibold">Total Amount</th>
+            <th className="text-left py-2 px-2 uppercase font-semibold">Offer Number</th>
+            <th className="text-left py-2 px-2 uppercase font-semibold">Description</th>
+            <th className="text-left py-2 px-2 uppercase font-semibold">Client</th>
+            <th className="text-left py-2 px-2 uppercase font-semibold">Date</th>
+            <th className="text-left py-2 px-2 uppercase font-semibold">Total Amount</th>
           </tr>
         </thead>
         <tbody className="divide-y divide-amber-300">
           <tr>
-            <td className="py-3 px-4">
+            <td className="py-2 px-2">
               <Link to={`/company/client-register/add-edit-client/123`}
                 className="text-blue-500 underline font-bold">
                 123
               </Link>
             </td>
-            <td className="py-3 px-4">FGHT-2342</td>
-            <td className="py-3 px-4">John</td>
-            <td className="py-3 px-4">{moment().format("DD MMM YYYY")}</td>
-            <td className="py-3 px-4">155000</td>
+            <td className="py-2 px-2">FGHT-2342</td>
+            <td className="py-2 px-2">John</td>
+            <td className="py-2 px-2">{moment().format("DD MMM YYYY")}</td>
+            <td className="py-2 px-2">155000</td>
           </tr>
           <tr>
-            <td className="py-3 px-4"><Link to={`/company/client-register/add-edit-client/234`}
+            <td className="py-2 px-2"><Link to={`/company/client-register/add-edit-client/234`}
               className="text-blue-500 underline font-bold">
               234
             </Link></td>
-            <td className="py-3 px-4">TYRD-2342</td>
-            <td className="py-3 px-4">Jason</td>
-            <td className="py-3 px-4">{moment().format("DD MMM YYYY")}</td>
-            <td className="py-3 px-4">1000</td>
+            <td className="py-2 px-2">TYRD-2342</td>
+            <td className="py-2 px-2">Jason</td>
+            <td className="py-2 px-2">{moment().format("DD MMM YYYY")}</td>
+            <td className="py-2 px-2">1000</td>
           </tr>
           {/* Add more rows as needed */}
         </tbody>

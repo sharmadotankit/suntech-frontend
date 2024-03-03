@@ -53,7 +53,7 @@ const AddEditOffer = () => {
             <div className="mb-4 md:flex md:items-center">
                 <div className="md:w-1/3">
                     <label
-                        className="block text-gray-700 text-sm font-bold mb-2"
+                        className="block text-gray-700 text-xs font-bold mb-2"
                         htmlFor="select-client"
                     >
                         Select Client
@@ -71,7 +71,7 @@ const AddEditOffer = () => {
             <div className="mb-4 md:flex md:items-center">
                 <div className="md:w-1/3">
                     <label
-                        className="block text-gray-700 text-sm font-bold mb-2"
+                        className="block text-gray-700 text-xs font-bold mb-2"
                         htmlFor="description"
                     >
                         Description
@@ -101,7 +101,7 @@ const AddEditOffer = () => {
             <div className="mb-4 md:flex md:items-center">
                 <div className="md:w-1/3">
                     <label
-                        className="block text-gray-700 text-sm font-bold mb-2"
+                        className="block text-gray-700 text-xs font-bold mb-2"
                         htmlFor="kind-attn"
                     >
                         Kind Attn:
@@ -118,7 +118,7 @@ const AddEditOffer = () => {
             <div className="mb-4 md:flex md:items-center">
                 <div className="md:w-1/3">
                     <label
-                        className="block text-gray-700 text-sm font-bold mb-2"
+                        className="block text-gray-700 text-xs font-bold mb-2"
                         htmlFor="subject"
                     >
                         Subject
@@ -135,7 +135,7 @@ const AddEditOffer = () => {
             <div className="mb-4 md:flex md:items-center">
                 <div className="md:w-1/3">
                     <label
-                        className="block text-gray-700 text-sm font-bold mb-2"
+                        className="block text-gray-700 text-xs font-bold mb-2"
                         htmlFor="Ref"
                     >
                         Ref
@@ -156,7 +156,7 @@ const AddEditOffer = () => {
             <div className="w-full mt-10">
                 <div className="flex justify-between items-center w-full">
                     <label
-                        className="text-gray-700 text-sm font-bold mb-2 mt-5"
+                        className="text-gray-700 text-xs font-bold mb-2 mt-5"
                         htmlFor="scope-of-work"
                     >
                         Scope Of Work
@@ -174,7 +174,7 @@ const AddEditOffer = () => {
             <div className="w-full mt-10">
                 <div className="flex justify-between items-center w-full">
                     <label
-                        className="text-gray-700 text-sm font-bold mb-2 mt-5"
+                        className="text-gray-700 text-xs font-bold mb-2 mt-5"
                         htmlFor="desgin-fee"
                     >
                         Design Fee
@@ -192,7 +192,7 @@ const AddEditOffer = () => {
             <div className="w-full mt-10">
                 <div className="flex justify-between items-center w-full">
                     <label
-                        className="text-gray-700 text-sm font-bold mb-2 mt-5"
+                        className="text-gray-700 text-xs font-bold mb-2 mt-5"
                         htmlFor="site-visits"
                     >
                         Site Visits
@@ -210,7 +210,7 @@ const AddEditOffer = () => {
             <div className="w-full mt-10">
                 <div className="flex justify-between items-center w-full">
                     <label
-                        className="text-gray-700 text-sm font-bold mb-2 mt-5"
+                        className="text-gray-700 text-xs font-bold mb-2 mt-5"
                         htmlFor="delivery-schedule"
                     >
                         Delivery Schedule
@@ -229,7 +229,7 @@ const AddEditOffer = () => {
             <div className="w-full mt-10">
                 <div className="flex justify-between items-center w-full">
                     <label
-                        className="text-gray-700 text-sm font-bold mb-2 mt-5"
+                        className="text-gray-700 text-xs font-bold mb-2 mt-5"
                         htmlFor="other-terms-and-conditions"
                     >
                         Other Terms & Conditions

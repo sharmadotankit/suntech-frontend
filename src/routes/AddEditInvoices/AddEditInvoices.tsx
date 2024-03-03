@@ -377,9 +377,9 @@ const AddEditInvoices: React.FC = () => {
           DELETE
         </button>
 
-        <button className="bg-amber-300 text-black font-bold px-4 py-2 rounded-md p-3 cursor-pointer m-1">
+        <Link to='/company/create-invoice-letter' className="bg-amber-300 text-black font-bold px-4 py-2 rounded-md p-3 cursor-pointer m-1">
           GENERATE/VIEW INVOICE LETTER
-        </button>
+        </Link>
       </div>
 
 

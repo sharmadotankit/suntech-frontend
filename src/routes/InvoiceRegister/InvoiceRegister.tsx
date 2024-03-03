@@ -1,5 +1,3 @@
-import React from "react";
-import CircularProgressBar from "../../components/CircularProgressBar/CircularProgressBar";
 import { Link } from "react-router-dom";
 import moment from "moment";
 
@@ -41,7 +39,7 @@ const InvoiceRegister = () => {
           <div className="w-full md:w-1/2 lg:w-1/4 px-2 mb-4">
             <button
               // onClick={handleAddLocationClick}
-              className="mt-7 bg-amber-500 text-white px-4 py-2 rounded-md hover:bg-amber-600 p-3 cursor-pointer hover:bg-amber-500 transition duration-100 ease-in-out block"
+              className=" bg-amber-500 text-white px-4 py-2 rounded-md hover:bg-amber-600 p-3 cursor-pointer hover:bg-amber-500 transition duration-100 ease-in-out block"
             >
               Download for CA
             </button>
@@ -107,7 +105,7 @@ const InvoiceRegister = () => {
           <div className="w-full md:w-1/2 lg:w-1/4 px-2 mb-4">
             <button
               // onClick={handleAddLocationClick}
-              className="mt-7 bg-amber-500 text-white px-4 py-2 rounded-md hover:bg-amber-600 p-3 cursor-pointer hover:bg-amber-500 transition duration-100 ease-in-out block"
+              className="bg-amber-500 text-white px-4 py-2 rounded-md hover:bg-amber-600 p-3 cursor-pointer hover:bg-amber-500 transition duration-100 ease-in-out block"
             >
               Clear Filter
             </button>

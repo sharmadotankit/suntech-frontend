@@ -72,8 +72,8 @@ const SideBar: React.FC<SidebarProps> = ({ children }) => {
     ]
 
     return (
-        <div className="flex h-full min-h-screen">
-            <div className="bg-amber-50 text-black w-64 flex flex-col overflow-y-auto">
+        <div className="flex h-full min-h-screen" >
+            <div className="bg-amber-50 text-black w-64 flex flex-col overflow-y-auto" style={{ minWidth:'250px' }}>
                 <div className="p-4 text-xl font-bold mb-5">
                     <img
                         src={companyName == "suntech-construction-engineering-consultant" ? suntechConstructionEngineeringConsultantLogo : suntechEngineeringConsultantLogo}

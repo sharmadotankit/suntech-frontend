@@ -28,6 +28,8 @@ import LeaveRecords from './routes/LeaveRecords/LeaveRecords';
 import AddEditOffer from "./routes/AddEditOffer/AddEditOffer";
 import AddEditProject from './routes/AddEditProject/AddEditProject';
 import AddEditInvoices from './routes/AddEditInvoices/AddEditInvoices';
+import CreateInvoiceLetter from './routes/CreateInvoiceLetter/CreateInvoiceLetter';
+import { AddEditSiteVisits } from './routes/AddEditSiteVisits/AddEditSiteVisits';
 
 function App() {
   const [isServerConnected, setIsServerConnected] = useState(true);
@@ -69,6 +71,8 @@ function App() {
                 <Route path="/company/add-edit-project/:projectId" element={<AddEditProject/>} />
                 <Route path="/company/add-edit-invoices" element={<AddEditInvoices/>} />
                 <Route path="/company/add-edit-invoices/:invoicedId" element={<AddEditInvoices/>} />
+                <Route path="/company/create-invoice-letter" element={<CreateInvoiceLetter/>} />
+                <Route path="/company/add-edit-site-visits" element={<AddEditSiteVisits/>} />
               </Route>
             {/* </Route> */}
           </Routes>

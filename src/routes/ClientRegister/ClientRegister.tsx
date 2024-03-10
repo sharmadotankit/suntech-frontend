@@ -48,7 +48,7 @@ const ClientRegister = () => {
         </div>
 
       </div>
-      <table className="min-w-full bg-amber-100 rounded-lg overflow-hidden text-xs">
+      <table className="min-w-full bg-amber-100 rounded-lg overflow-hidden text-sm">
         <thead className="bg-amber-500 text-white">
           <tr>
             <th className="text-left py-2 px-2 uppercase font-semibold">Client Code</th>
@@ -61,7 +61,7 @@ const ClientRegister = () => {
         <tbody className="divide-y divide-amber-300">
           <tr>
             <td className="py-2 px-2">
-              <Link to={`/company/client-register/add-edit-client/123`}
+              <Link to={`/company/add-edit-client/123`}
                 className="text-blue-500 underline font-bold">
                 123
               </Link>
@@ -72,7 +72,7 @@ const ClientRegister = () => {
             <td className="py-2 px-2">Powai Mumbai</td>
           </tr>
           <tr>
-            <td className="py-2 px-2"><Link to={`/company/client-register/add-edit-client/234`}
+            <td className="py-2 px-2"><Link to={`/company/add-edit-client/234`}
               className="text-blue-500 underline font-bold">
               234
             </Link></td>

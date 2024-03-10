@@ -15,7 +15,7 @@ const InfoIconWithTooltip = ({ imageUrl, tooltipText }) => {
       {showTooltip && (
         <div className="absolute z-10 bg-white p-2 rounded-md shadow-md bottom-full left-1/2 transform -translate-x-1/2 transition-opacity duration-300">
           <img src={imageUrl} alt="Tooltip Image" className="w-64 h-32 mb-2" />
-          <p className="text-xs">{tooltipText}</p>
+          <p className="text-sm">{tooltipText}</p>
         </div>
       )}
     </div>

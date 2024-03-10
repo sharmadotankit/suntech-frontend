@@ -11,7 +11,7 @@ const AddEditInvoices: React.FC = () => {
   useEffect(() => {}, []);
 
   return (
-    <div className="w-full text-xs">
+    <div className="w-full text-sm">
       <h1
         className="text-center text-4xl font-bold mb-4"
         style={{ fontFamily: "Orbitron, sans-serif" }}

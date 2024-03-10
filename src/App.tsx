@@ -29,7 +29,10 @@ import AddEditOffer from "./routes/AddEditOffer/AddEditOffer";
 import AddEditProject from './routes/AddEditProject/AddEditProject';
 import AddEditInvoices from './routes/AddEditInvoices/AddEditInvoices';
 import CreateInvoiceLetter from './routes/CreateInvoiceLetter/CreateInvoiceLetter';
-import { AddEditSiteVisits } from './routes/AddEditSiteVisits/AddEditSiteVisits';
+import  AddEditSiteVisits from './routes/AddEditSiteVisits/AddEditSiteVisits';
+import  AddEditOutward  from './routes/AddEditOutward/AddEditOutward';
+import AddEditAssociate from './routes/AddEditAssociate/AddEditAssociate';
+import GenerateSalarySlip from './routes/GenerateSalarySlip/GenerateSalarySlip';
 
 function App() {
   const [isServerConnected, setIsServerConnected] = useState(true);
@@ -73,6 +76,12 @@ function App() {
                 <Route path="/company/add-edit-invoices/:invoicedId" element={<AddEditInvoices/>} />
                 <Route path="/company/create-invoice-letter" element={<CreateInvoiceLetter/>} />
                 <Route path="/company/add-edit-site-visits" element={<AddEditSiteVisits/>} />
+                <Route path="/company/add-edit-site-visits/:siteVisitId" element={<AddEditSiteVisits/>} />
+                <Route path="/company/add-edit-outward" element={<AddEditOutward/>} />
+                <Route path="/company/add-edit-outward/:outwardId" element={<AddEditOutward/>} />
+                <Route path="/company/add-edit-associate" element={<AddEditAssociate/>} />
+                <Route path="/company/add-edit-associate/:associateId" element={<AddEditAssociate/>} />
+                <Route path="/company/generate-salary-slip" element={<GenerateSalarySlip/>} />
               </Route>
             {/* </Route> */}
           </Routes>

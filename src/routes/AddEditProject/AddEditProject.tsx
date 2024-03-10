@@ -99,7 +99,7 @@ const AddEditProject = () => {
             <div className="mb-4">
               <label
                 htmlFor="projectNumber"
-                className="text-gray-700 text-xs font-bold mb-2 "
+                className="text-gray-700 text-sm font-bold mb-2 "
               >
                 Project No:
               </label>
@@ -115,7 +115,7 @@ const AddEditProject = () => {
             <div className="mb-4">
               <label
                 htmlFor="projectNumber"
-                className="text-gray-700 text-xs font-bold mb-2 "
+                className="text-gray-700 text-sm font-bold mb-2 "
               >
                 Select Offer No:
               </label>
@@ -136,7 +136,7 @@ const AddEditProject = () => {
             <div className="mb-4">
               <label
                 htmlFor="client"
-                className="text-gray-700 text-xs font-bold mb-2 "
+                className="text-gray-700 text-sm font-bold mb-2 "
               >
                 Client:
               </label>
@@ -155,7 +155,7 @@ const AddEditProject = () => {
           <div className="w-1/3 p-4 rounded text-center">
             <label
               htmlFor="projectStatus"
-              className="text-gray-700 block text-xs font-bold text-gray-700 mb-5"
+              className="text-gray-700 block text-sm font-bold text-gray-700 mb-5"
             >
               Project Status:
             </label>
@@ -175,7 +175,7 @@ const AddEditProject = () => {
             <div>
               <label
                 htmlFor="toggle"
-                className={`block text-xs font-bold ${
+                className={`block text-sm font-bold ${
                   projectStatus ? "text-amber-500" : "text-gray-400"
                 }`}
               >
@@ -187,7 +187,7 @@ const AddEditProject = () => {
           <div className="w-1/3 p-4 rounded text-left">
             <label
               htmlFor="projectNumber"
-              className="text-gray-700 text-xs font-bold mb-2 "
+              className="text-gray-700 text-sm font-bold mb-2 "
             >
               Project Type:
             </label>
@@ -210,7 +210,7 @@ const AddEditProject = () => {
           <div className="w-full">
             <div className="flex justify-between items-center w-full">
               <label
-                className="text-gray-700 text-xs font-bold mb-2 "
+                className="text-gray-700 text-sm font-bold mb-2 "
                 htmlFor="long-description"
               >
                 Long Description
@@ -227,7 +227,7 @@ const AddEditProject = () => {
           <div className="w-full mt-5">
             <div className="flex justify-between items-center w-full">
               <label
-                className="text-gray-700 text-xs font-bold mb-2 "
+                className="text-gray-700 text-sm font-bold mb-2 "
                 htmlFor="short-description"
               >
                 Short Description
@@ -247,7 +247,7 @@ const AddEditProject = () => {
           <div className="mb-4 md:flex md:items-center flex-1 mr-10">
             <div className="md:w-1/3">
               <label
-                className="block text-gray-700 text-xs font-bold mb-2"
+                className="block text-gray-700 text-sm font-bold mb-2"
                 htmlFor="order-value"
               >
                 Order Value
@@ -266,13 +266,13 @@ const AddEditProject = () => {
           <div className="mb-4 md:flex md:items-center flex-1">
             <div className="md:w-1/3">
               <label
-                className="block text-gray-700 text-xs font-bold mb-2"
+                className="block text-gray-700 text-sm font-bold mb-2"
                 htmlFor="order-value"
               ></label>
             </div>
             <div className="md:w-1/3">
               <label
-                className="block text-gray-700 text-xs font-bold mb-2"
+                className="block text-gray-700 text-sm font-bold mb-2"
                 htmlFor="order-value"
               >
                 Order Date
@@ -291,13 +291,13 @@ const AddEditProject = () => {
         <div className="mt-5">
           <div>
             <label
-              className="block text-gray-700 text-xs font-bold mb-2"
+              className="block text-gray-700 text-sm font-bold mb-2"
               htmlFor="order-value"
             >
               Project Correspondance
             </label>
           </div>
-          <table className="min-w-full bg-amber-100 rounded-lg overflow-hidden text-xs">
+          <table className="min-w-full bg-amber-100 rounded-lg overflow-hidden text-sm">
             <thead className="bg-amber-500 text-white">
               <tr>
                 <th className="text-left py-2 px-2 uppercase font-semibold">
@@ -336,7 +336,7 @@ const AddEditProject = () => {
         <div className="mb-4 mt-5 w-full">
           <label
             htmlFor="projectNumber"
-            className="text-gray-700 text-xs font-bold mb-2 "
+            className="text-gray-700 text-sm font-bold mb-2 "
           >
             Site Location:
           </label>
@@ -368,7 +368,7 @@ const AddEditProject = () => {
             <div>
               <label
                 htmlFor="site-map"
-                className="text-gray-700 text-xs font-bold mb-2 "
+                className="text-gray-700 text-sm font-bold mb-2 "
               >
                 Name for Location :
               </label>
@@ -381,7 +381,7 @@ const AddEditProject = () => {
             <div>
               <label
                 htmlFor="site-map"
-                className="text-gray-700 text-xs font-bold mb-2 "
+                className="text-gray-700 text-sm font-bold mb-2 "
               >
                 Copy the location from google :{" "}
                 <InfoIconWithTooltip
@@ -407,7 +407,7 @@ const AddEditProject = () => {
           <div className="mb-4 mt-5 w-full">
             <label
               htmlFor="select-gst"
-              className="text-gray-700 text-xs font-bold mb-2 "
+              className="text-gray-700 text-sm font-bold mb-2 "
             >
               GST No:
             </label>
@@ -428,7 +428,7 @@ const AddEditProject = () => {
               <div className="mb-4 mt-5 w-full">
                 <label
                   htmlFor="projectNumber"
-                  className="text-gray-700 text-xs font-bold mb-2 "
+                  className="text-gray-700 text-sm font-bold mb-2 "
                 >
                   Bill To:
                 </label>
@@ -449,7 +449,7 @@ const AddEditProject = () => {
               <div className="mb-4 mt-5 w-full">
                 <label
                   htmlFor="projectNumber"
-                  className="text-gray-700 text-xs font-bold mb-2 "
+                  className="text-gray-700 text-sm font-bold mb-2 "
                 >
                   Ship To:
                 </label>
@@ -470,7 +470,7 @@ const AddEditProject = () => {
 
             <div>
               <label
-                className="block text-gray-700 text-xs font-bold mb-2 mt-2"
+                className="block text-gray-700 text-sm font-bold mb-2 mt-2"
                 htmlFor="account-no-1"
               >
                 Attach W.O.:

@@ -87,7 +87,7 @@ const SiteVisitsRegister = () => {
       </div>
       <table
         border={1}
-        className="min-w-full bg-amber-100 rounded-lg overflow-hidden text-xs"
+        className="min-w-full bg-amber-100 rounded-lg overflow-hidden text-sm"
       >
         <thead className="bg-amber-500 text-white">
           <tr>
@@ -115,6 +115,9 @@ const SiteVisitsRegister = () => {
               PLACE OF VISIT
             </th>
             <th className="text-left py-2 px-2 uppercase font-semibold">
+              VISITOR NAME
+            </th>
+            <th className="text-left py-2 px-2 uppercase font-semibold">
               PURPOSE OF VISIT
             </th>
 
@@ -134,13 +137,16 @@ const SiteVisitsRegister = () => {
             <th className="text-left py-2 px-2 uppercase font-semibold">
               TOTAL EXPENSES
             </th>
+            <th className="text-left py-2 px-2 uppercase font-semibold">
+              INVOICE STATUS
+            </th>
           </tr>
         </thead>
         <tbody className="divide-y divide-amber-300">
           <tr>
             <td className="py-2 px-2">
               <Link
-                to={`/company/add-edit-invoices/INV-24`}
+                to={`/company/add-edit-site-visits/SV-123`}
                 className="text-blue-500 underline font-bold"
               >
                 SV-123
@@ -154,13 +160,15 @@ const SiteVisitsRegister = () => {
             </td>
             <td className="py-2 px-2">2</td>
             <td className="py-2 px-2">GUJRAT LG SITE</td>
+            <td className="py-2 px-2">RAHUL</td>
             <td className="py-2 px-2">MEETING</td>
             <td className="py-2 px-2">10000</td>
             <td className="py-2 px-2">1100</td>
             <td className="py-2 px-2">0</td>
-            <td className="py-2 px-2">15000</td>
+            <td className="py-2 px-2">15000 </td>
             <td className="py-2 px-2">2700 </td>
             <td className="py-2 px-2">17700 </td>
+            <td className="py-2 px-2">INVOICED </td>
           </tr>
         </tbody>
       </table>

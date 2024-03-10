@@ -42,7 +42,7 @@ const Dashboard = () => {
           </button>
         </div>
       </div>
-      <table className="min-w-full bg-amber-100 rounded-lg overflow-hidden text-xs">
+      <table className="min-w-full bg-amber-100 rounded-lg overflow-hidden text-sm">
         <thead className="bg-amber-500 text-white">
           <tr>
             <th className="text-left py-2 px-2 uppercase font-semibold">Name</th>

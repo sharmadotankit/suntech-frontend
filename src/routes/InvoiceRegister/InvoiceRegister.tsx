@@ -114,7 +114,7 @@ const InvoiceRegister = () => {
       </div>
       <table
         border={1}
-        className="min-w-full bg-amber-100 rounded-lg overflow-hidden text-xs"
+        className="min-w-full bg-amber-100 rounded-lg overflow-hidden text-sm"
       >
         <thead className="bg-amber-500 text-white">
           <tr className="text-lg font-bold bg-amber-700">

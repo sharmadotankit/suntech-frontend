@@ -77,7 +77,7 @@ const CreateInvoiceLetter = () => {
       <div className="mb-4 md:flex md:items-center">
         <div className="md:w-1/3">
           <label
-            className="block text-gray-700 text-xs font-bold mb-2"
+            className="block text-gray-700 text-sm font-bold mb-2"
             htmlFor="kind-attn"
           >
             Kind Attn:
@@ -96,7 +96,7 @@ const CreateInvoiceLetter = () => {
       <div className="mb-4 md:flex md:items-center">
         <div className="md:w-1/3">
           <label
-            className="block text-gray-700 text-xs font-bold mb-2"
+            className="block text-gray-700 text-sm font-bold mb-2"
             htmlFor="subject"
           >
             Subject
@@ -115,7 +115,7 @@ const CreateInvoiceLetter = () => {
       <div className="mb-4 md:flex md:items-center">
         <div className="md:w-1/3">
           <label
-            className="block text-gray-700 text-xs font-bold mb-2"
+            className="block text-gray-700 text-sm font-bold mb-2"
             htmlFor="Ref"
           >
             Ref

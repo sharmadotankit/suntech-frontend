@@ -7,7 +7,7 @@ interface Document {
   file: File | null;
 }
 
-export  default function AddEditSiteVisits() {
+export default function AddEditOutward() {
   const [documents, setDocuments] = useState<Document[]>([]);
 
   let companyName = "suntech-consultant";
@@ -93,31 +93,72 @@ export  default function AddEditSiteVisits() {
         className="text-center text-4xl font-bold mb-4"
         style={{ fontFamily: "Orbitron, sans-serif" }}
       >
-        Add Site Visit
+        Add Outward
       </h1>
       <div className="p-2">
         <div>
-          <div className="w-full px-2 mb-4">
+          <div className="w-full   px-2 mb-4">
             <div className="mb-4 md:flex md:items-center">
               <div className="md:w-1/3">
                 <label
                   className="block text-gray-700 text-sm font-bold mb-2"
-                  htmlFor="project-no"
+                  htmlFor="doc-no"
                 >
-                  Project No
+                  Document No
                 </label>
               </div>
               <div className="md:w-2/3">
-                <select
-                  value=""
-                  id="project-no"
+                <input
                   className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="doc-no"
+                  type="text"
+                  placeholder="Enter Document No"
+                />
+              </div>
+            </div>
+
+            <div className="mb-4">
+              <div>
+                <label
+                  className="block text-gray-700 text-sm font-bold mb-2"
+                  htmlFor="doc-type"
                 >
-                  <option>Select a Project</option>
-                  <option> Project 1 </option>
-                  <option> Project 2 </option>
-                  <option> Project 3 </option>
-                </select>
+                  Document Type
+                </label>
+              </div>
+              <div>
+                <div className="block text-gray-700 text-sm mb-3 ">
+                  <input
+                    type="radio"
+                    name="doc-type"
+                    value="appointment-letter"
+                  />{" "}
+                  <span>Appointment letter</span>
+                </div>
+                <div className="block text-gray-700 text-sm mb-3">
+                  <input
+                    type="radio"
+                    name="doc-type"
+                    value="complaince-letter"
+                  />{" "}
+                  <span>Complaince letter</span>
+                </div>
+                <div className="block text-gray-700 text-sm mb-3">
+                  <input type="radio" name="doc-type" value="purchase-order" />{" "}
+                  <span>Purchase Order</span>
+                </div>
+                <div className="block text-gray-700 text-sm mb-3">
+                  <input type="radio" name="doc-type" value="offer-letter" />{" "}
+                  <span>Offer letter</span>
+                </div>
+                <div className="block text-gray-700 text-sm mb-3">
+                  <input type="radio" name="doc-type" value="invoice-letter" />{" "}
+                  <span>Invoice letter</span>
+                </div>
+                <div className="block text-gray-700 text-sm mb-3">
+                  <input type="radio" name="doc-type" value="others" />{" "}
+                  <span>Others</span>
+                </div>
               </div>
             </div>
 
@@ -127,7 +168,7 @@ export  default function AddEditSiteVisits() {
                   className="block text-gray-700 text-sm font-bold mb-2"
                   htmlFor="doc-no"
                 >
-                  Doc No
+                  Description
                 </label>
               </div>
               <div className="md:w-2/3">
@@ -135,105 +176,40 @@ export  default function AddEditSiteVisits() {
                   className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="doc-no"
                   type="text"
-                  placeholder="Enter Doc No"
+                  placeholder="Enter Description"
                 />
               </div>
             </div>
 
             <div className="mb-4 md:flex md:items-center">
               <div className="md:w-1/3">
-                <label
-                  className="block text-gray-700 text-sm font-bold mb-2"
-                  htmlFor="client-name"
-                >
-                  Client
-                </label>
-              </div>
-              <div className="md:w-2/3">
-                <input
+                <select
+                  value=""
                   className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  type="text"
-                  id="client-name"
-                  placeholder="Enter Client Name"
-                />
-              </div>
-            </div>
-
-            <div className="mb-4 md:flex md:items-center">
-              <div className="md:w-1/3">
-                <label
-                  className="block text-gray-700 text-sm font-bold mb-2"
-                  htmlFor="place-of-visit"
                 >
-                  Place of Visit
-                </label>
+                  <option>Select Client</option>
+                  <option>Client 1 </option>
+                  <option>Client 2 </option>
+                  <option>Client 3 </option>
+                </select>
               </div>
-              <div className="md:w-2/3">
-                <input
+              <div className="md:w-1/3">
+                <select
+                  value=""
                   className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  type="text"
-                  id="place-of-visit"
-                  placeholder="Enter Billing Address"
-                />
-              </div>
-            </div>
-
-            <div className="mb-4 md:flex md:items-center">
-              <div className="md:w-1/3">
-                <label
-                  className="block text-gray-700 text-sm font-bold mb-2"
-                  htmlFor="account-no-1"
                 >
-                  Purpose Of Visit
-                </label>
+                  <option>Select Project</option>
+                  <option>Project 1 </option>
+                  <option>Project 2 </option>
+                  <option>Project 3 </option>
+                </select>
               </div>
-              <div className="md:w-2/3">
-                <textarea
-                  className="shadow  h-24 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  placeholder="Enter Shipping Address"
+
+              <div className="md:w-1/3">
+                <input type="date"
+                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 />
               </div>
-            </div>
-
-            <div className=" w-full overflow-x-auto mt-5 rounded-lg">
-              <label>Expense By Suntech</label>
-              <table className="table-auto w-full text-sm">
-                <thead>
-                  <tr className="bg-amber-500 text-white">
-                    <th className="border px-4 py-2">NAME</th>
-                    <th className="border px-4 py-2">FROM</th>
-                    <th className="border px-4 py-2">TO</th>
-                    <th className="border px-4 py-2">NO OF DAYS</th>
-                    <th className="border px-4 py-2">AIR FARE</th>
-                    <th className="border px-4 py-2">CONVEYENCE</th>
-                    <th className="border px-4 py-2">LOADING & BOARDING</th>
-                    <th className="border px-4 py-2">PROFESSIONAL CHARGES</th>
-                    <th className="border px-4 py-2">GST</th>
-                    <th className="border px-4 py-2">TOTAL</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {data.map((item) => (
-                    <tr key={item.id}>
-                      <td className="border px-4 py-2">{item.name}</td>
-                      <td className="border px-4 py-2">{item.from}</td>
-                      <td className="border px-4 py-2">{item.to}</td>
-                      <td className="border px-4 py-2">{item.noOfDays}</td>
-                      <td className="border px-4 py-2">{item.airFare}</td>
-                      <td className="border px-4 py-2">{item.conveyence}</td>
-
-                      <td className="border px-4 py-2">
-                        {item.lodgingBoarding}
-                      </td>
-                      <td className="border px-4 py-2">
-                        {item.professionalCharges}
-                      </td>
-                      <td className="border px-4 py-2">{item.gst}</td>
-                      <td className="border px-4 py-2">{item.total}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
             </div>
 
             <div>
@@ -304,27 +280,19 @@ export  default function AddEditSiteVisits() {
               </button>
 
               <button className="bg-amber-500 text-white px-4 py-2 rounded-md hover:bg-amber-600 p-3 cursor-pointer hover:bg-amber-500 transition duration-100 ease-in-out block m-2">
-                Download
+                Download SV Details
               </button>
 
               <button className="bg-amber-500 text-white px-4 py-2 rounded-md hover:bg-amber-600 p-3 cursor-pointer hover:bg-amber-500 transition duration-100 ease-in-out block m-2">
-                Mark As Sent
+                Generate Invoice
               </button>
 
               <Link
                 to={`/company/site-visits-register`}
                 className="bg-amber-500 text-white px-4 py-2 rounded-md hover:bg-amber-600 p-3 cursor-pointer hover:bg-amber-500 transition duration-100 ease-in-out block m-2"
               >
-                Return
+                Back
               </Link>
-
-              <button className="bg-amber-500 text-white px-4 py-2 rounded-md hover:bg-amber-600 p-3 cursor-pointer hover:bg-amber-500 transition duration-100 ease-in-out block m-2">
-                Revision Up
-              </button>
-
-              <button className="bg-amber-500 text-white px-4 py-2 rounded-md hover:bg-amber-600 p-3 cursor-pointer hover:bg-amber-500 transition duration-100 ease-in-out block m-2">
-                Cancel Doc
-              </button>
             </div>
           </div>
         </div>

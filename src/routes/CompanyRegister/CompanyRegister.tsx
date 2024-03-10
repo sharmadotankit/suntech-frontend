@@ -4,8 +4,8 @@ const CompanyRegister = () => {
         <h1 className="text-center text-4xl font-bold mb-4" style={{ fontFamily: 'Orbitron, sans-serif' }}>Company Details</h1>
         <div className="p-2">
           <div >
-            <div className="w-full lg:w-1/2 px-2 mb-4">
-              <label className="block text-gray-700 text-xs font-bold mb-2" htmlFor="company-name">COMPANY NAME:</label>
+            <div className="w-full   px-2 mb-4">
+              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="company-name">COMPANY NAME:</label>
               <input
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-4"
                 id="company-name"
@@ -14,7 +14,7 @@ const CompanyRegister = () => {
               />
   
   
-              <label className="block text-gray-700 text-xs font-bold mb-2" htmlFor="gst-no">GST NO:</label>
+              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="gst-no">GST NO:</label>
               <input
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-4"
                 id="gst-no"
@@ -22,7 +22,7 @@ const CompanyRegister = () => {
                 placeholder="Enter your company name"
               />
   
-              <label className="block text-gray-700 text-xs font-bold mb-2" htmlFor="address">ADDRESS:</label>
+              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="address">ADDRESS:</label>
               <textarea
                  placeholder="Enter address"
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-6"
@@ -34,7 +34,7 @@ const CompanyRegister = () => {
               <div className="mb-4 md:flex md:items-center">
                 <div className="md:w-1/3">
                   <label 
-                    className="block text-gray-700 text-xs font-bold mb-2" 
+                    className="block text-gray-700 text-sm font-bold mb-2" 
                     htmlFor="account-no-1"
                   >
                     ACCOUNT NO.
@@ -46,7 +46,7 @@ const CompanyRegister = () => {
               </div>
               <div className="mb-4 md:flex md:items-center">
                 <div className="md:w-1/3">
-                  <label className="block text-gray-700 text-xs font-bold mb-2" htmlFor="account-name-1">
+                  <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="account-name-1">
                     ACCOUNT NAME
                   </label>
                 </div>
@@ -57,7 +57,7 @@ const CompanyRegister = () => {
   
               <div className="mb-4 md:flex md:items-center">
                 <div className="md:w-1/3">
-                  <label className="block text-gray-700 text-xs font-bold mb-2" htmlFor="ifsc-code-1">
+                  <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="ifsc-code-1">
                     IFSC CODE
                   </label>
                 </div>
@@ -68,7 +68,7 @@ const CompanyRegister = () => {
   
               <div className="mb-4 md:flex md:items-center">
                 <div className="md:w-1/3">
-                  <label className="block text-gray-700 text-xs font-bold mb-2" htmlFor="bank-name-1">
+                  <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="bank-name-1">
                     BANK NAME
                   </label>
                 </div>
@@ -79,7 +79,7 @@ const CompanyRegister = () => {
   
               <div className="mb-4 md:flex md:items-center">
                 <div className="md:w-1/3">
-                  <label className="block text-gray-700 text-xs font-bold mb-2" htmlFor="pan-no-1">
+                  <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="pan-no-1">
                     PAN NO.
                   </label>
                 </div>
@@ -92,7 +92,7 @@ const CompanyRegister = () => {
               <div className="mb-4 md:flex md:items-center">
                 <div className="md:w-1/3">
                   <label 
-                    className="block text-gray-700 text-xs font-bold mb-2" 
+                    className="block text-gray-700 text-sm font-bold mb-2" 
                     htmlFor="account-no-2"
                   >
                     ACCOUNT NO.
@@ -104,7 +104,7 @@ const CompanyRegister = () => {
               </div>
               <div className="mb-4 md:flex md:items-center">
                 <div className="md:w-1/3">
-                  <label className="block text-gray-700 text-xs font-bold mb-2" htmlFor="account-name-2">
+                  <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="account-name-2">
                     ACCOUNT NAME
                   </label>
                 </div>
@@ -115,7 +115,7 @@ const CompanyRegister = () => {
   
               <div className="mb-4 md:flex md:items-center">
                 <div className="md:w-1/3">
-                  <label className="block text-gray-700 text-xs font-bold mb-2" htmlFor="ifsc-code-2">
+                  <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="ifsc-code-2">
                     IFSC CODE
                   </label>
                 </div>
@@ -126,7 +126,7 @@ const CompanyRegister = () => {
   
               <div className="mb-4 md:flex md:items-center">
                 <div className="md:w-1/3">
-                  <label className="block text-gray-700 text-xs font-bold mb-2" htmlFor="bank-name-2">
+                  <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="bank-name-2">
                     BANK NAME
                   </label>
                 </div>
@@ -137,7 +137,7 @@ const CompanyRegister = () => {
   
               <div className="mb-4 md:flex md:items-center">
                 <div className="md:w-1/3">
-                  <label className="block text-gray-700 text-xs font-bold mb-2" htmlFor="pan-no-2">
+                  <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="pan-no-2">
                     PAN NO.
                   </label>
                 </div>

@@ -35,19 +35,28 @@ const AssociateRegister = () => {
         <thead className="bg-amber-500 text-white">
           <tr>
             <th className="text-left py-2 px-2 uppercase font-semibold">
-              DOCUMENT NO
+              ASSO NO
             </th>
             <th className="text-left py-2 px-2 uppercase font-semibold">
-              CLIENT
+              NAME
             </th>
             <th className="text-left py-2 px-2 uppercase font-semibold">
-              DATE
+              DESIGNATION
             </th>
             <th className="text-left py-2 px-2 uppercase font-semibold">
-              DOCUMENT TYPE
+              USERNAME
             </th>
             <th className="text-left py-2 px-2 uppercase font-semibold">
-              DESCRIPTION
+              INITIALS
+            </th>
+            <th className="text-left py-2 px-2 uppercase font-semibold">
+              LATEST SALARY SLIP
+            </th>
+            <th className="text-left py-2 px-2 uppercase font-semibold">
+              DATE OF JOINING
+            </th>
+            <th className="text-left py-2 px-2 uppercase font-semibold">
+              TENURE IN COMPANY
             </th>
           </tr>
         </thead>
@@ -58,29 +67,18 @@ const AssociateRegister = () => {
                 to={`/company/add-edit-associate/24-11-PQ`}
                 className="text-blue-500 underline font-bold"
               >
-                24-11 PQ
+               030
               </Link>
             </td>
-            <td className="py-2 px-2">Jay Kumar</td>
-            <td className="py-2 px-2">{moment().format("DD MMM YYYY")}</td>
-            <td className="py-2 px-2">Offer Letter</td>
-            <td className="py-2 px-2">Offer letter for LG at ajmer</td>
+            <td className="py-2 px-2">Pranav Kulkarni</td>
+            <td className="py-2 px-2">Sr. Engineer </td>
+            <td className="py-2 px-2">Pkulkarni</td>
+            <td className="py-2 px-2">PK</td>
+            <td className="py-2 px-2">Icon</td>
+            <td className="py-2 px-2">05 APR 2023</td>
+            <td className="py-2 px-2">12</td>
           </tr>
-          <tr>
-            <td className="py-2 px-2">
-              <Link
-                to={`/company/add-edit-associate/24-11-PQ`}
-                className="text-blue-500 underline font-bold"
-              >
-                24-11 PQ
-              </Link>
-            </td>
-            <td className="py-2 px-2">Jay Kumar</td>
-            <td className="py-2 px-2">{moment().format("DD MMM YYYY")}</td>
-            <td className="py-2 px-2">Offer Letter</td>
-            <td className="py-2 px-2">Offer letter for LG at Ajer</td>
-          </tr>
-          {/* Add more rows as needed */}
+
         </tbody>
       </table>
     </div>

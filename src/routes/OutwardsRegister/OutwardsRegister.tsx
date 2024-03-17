@@ -44,7 +44,7 @@ const OutwardsRegister = () => {
             <input
               type="text"
               className="w-full border border-gray-300 rounded-md px-3 py-2"
-              placeholder="Project Filter"
+              placeholder="Document Filter"
             />
           </div>
 
@@ -60,7 +60,7 @@ const OutwardsRegister = () => {
           <div className="w-full md:w-1/2 lg:w-1/4 px-2 mb-4">
             <button
               // onClick={handleAddLocationClick}
-              className="bg-amber-500 text-white px-4 py-2 rounded-md hover:bg-amber-600 p-3 cursor-pointer hover:bg-amber-500 transition duration-100 ease-in-out block"
+              className="mt-7 bg-amber-500 text-white px-4 py-2 rounded-md hover:bg-amber-600 p-3 cursor-pointer hover:bg-amber-500 transition duration-100 ease-in-out block"
             >
               Clear Filter
             </button>

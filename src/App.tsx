@@ -33,6 +33,7 @@ import  AddEditSiteVisits from './routes/AddEditSiteVisits/AddEditSiteVisits';
 import  AddEditOutward  from './routes/AddEditOutward/AddEditOutward';
 import AddEditAssociate from './routes/AddEditAssociate/AddEditAssociate';
 import GenerateSalarySlip from './routes/GenerateSalarySlip/GenerateSalarySlip';
+import AddEditExpense from './routes/AddEditExpense/AddEditExpense';
 
 function App() {
   const [isServerConnected, setIsServerConnected] = useState(true);
@@ -82,6 +83,8 @@ function App() {
                 <Route path="/company/add-edit-associate" element={<AddEditAssociate/>} />
                 <Route path="/company/add-edit-associate/:associateId" element={<AddEditAssociate/>} />
                 <Route path="/company/generate-salary-slip" element={<GenerateSalarySlip/>} />
+                <Route path="/company/add-edit-expense" element={<AddEditExpense/>} />
+                <Route path="/company/add-edit-expense/:expenseId" element={<AddEditExpense/>} />
               </Route>
             {/* </Route> */}
           </Routes>

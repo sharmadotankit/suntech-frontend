@@ -118,19 +118,19 @@ const InvoiceRegister = () => {
       >
         <thead className="bg-amber-500 text-white">
           <tr className="text-lg font-bold bg-amber-700">
-            <td className="py-3 px-2"></td>
-            <td className="py-3 px-2"></td>
-            <td className="py-3 px-2"></td>
-            <td className="py-3 px-2"></td>
-            <td className="py-3 px-2"></td>
-            <td className="py-3 px-2"></td>
-            <td className="py-3 px-2"></td>
-            <td className="py-3 px-2">TOTAL:</td>
-            <td className="py-3 px-2">2000000</td>
-            <td className="py-3 px-2">360000</td>
-            <td className="py-3 px-2">2400000</td>
-            <td className="py-3 px-2">1500000</td>
-            <td className="py-3 px-2"></td>
+            <td className="py-2 px-2"></td>
+            <td className="py-2 px-2"></td>
+            <td className="py-2 px-2"></td>
+            <td className="py-2 px-2"></td>
+            <td className="py-2 px-2"></td>
+            <td className="py-2 px-2"></td>
+            <td className="py-2 px-2"></td>
+            <td className="py-2 px-2">TOTAL:</td>
+            <td className="py-2 px-2">2000000</td>
+            <td className="py-2 px-2">360000</td>
+            <td className="py-2 px-2">2400000</td>
+            <td className="py-2 px-2">1500000</td>
+            <td className="py-2 px-2"></td>
           </tr>
           <tr>
             <th className="text-left py-2 px-2 uppercase font-semibold">

@@ -11,7 +11,7 @@ interface Document {
 const AddEditClient = () => {
   const [documents, setDocuments] = useState<Document[]>([]);
 
-  let companyName = "suntech-consultant";
+  let companyName = "suntech-consultants";
   const data = [
     { id: 1, gstNo: 'GST123', billingAddress: 'Billing Address 1', shippingAddress: 'Shipping Address 1', isDefault: true },
     { id: 2, gstNo: 'GST456', billingAddress: 'Billing Address 2', shippingAddress: 'Shipping Address 2', isDefault: false },

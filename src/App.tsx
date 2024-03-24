@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import Login from './routes/Login/Login';
-import ProtectedRoutes from './routes/Login/ProtectedRoutes';
+import ProtectedRoutes from './ProtectedRoutes/ProtectedRoutes';
 import Dashboard from './routes/Dashboard/Dashboard';
 import Company from './routes/Company/Company';
 import ServerConnectingComponent from './components/ServerConnectingComponent';
@@ -34,13 +34,14 @@ import  AddEditOutward  from './routes/AddEditOutward/AddEditOutward';
 import AddEditAssociate from './routes/AddEditAssociate/AddEditAssociate';
 import GenerateSalarySlip from './routes/GenerateSalarySlip/GenerateSalarySlip';
 import AddEditExpense from './routes/AddEditExpense/AddEditExpense';
+import UserRegister from './routes/UserRegister/UserRegister';
 
 function App() {
   const [isServerConnected, setIsServerConnected] = useState(true);
   // const isLoggedIn = localStorage.getItem("isLoggedIn");
   // const token = localStorage.getItem("token");
   const isLoggedIn = true;
-  const token = 'dsfsafasd';
+  const token = '';
 
   return (
     <div className="App">
@@ -52,8 +53,11 @@ function App() {
               (!token && <Route path="/" element={<Login />}></Route>)}
             <Route index element={<Login />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/select-company" element={<SelectCompanyComponent />} />
-            {/* <Route path="/company" element={<ProtectedRoutes />}> */}
+            <Route path="/select-company" element={<ProtectedRoutes />}>
+              <Route path="/select-company" element={<SelectCompanyComponent />} />
+            </Route>
+
+            <Route path="/company" element={<ProtectedRoutes />}>
               <Route path="/company" element={<Company />} >
                 <Route index element={<Dashboard />} />
                 <Route path="/company/dashboard" element={<Dashboard />} />
@@ -85,8 +89,9 @@ function App() {
                 <Route path="/company/generate-salary-slip" element={<GenerateSalarySlip/>} />
                 <Route path="/company/add-edit-expense" element={<AddEditExpense/>} />
                 <Route path="/company/add-edit-expense/:expenseId" element={<AddEditExpense/>} />
+                <Route path="/company/user-register" element={<UserRegister/>} />
               </Route>
-            {/* </Route> */}
+            </Route>
           </Routes>
         </>
       ) : (

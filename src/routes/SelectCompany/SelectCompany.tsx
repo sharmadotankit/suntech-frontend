@@ -1,14 +1,25 @@
-import suntechEngineeringConsultantLogo from '../../assets/images/suntech-engineering-consultants.png';
-import suntechConstructionEngineeringConsultantLogo from '../../assets/images/suntech-construction-engineering-consultants.png';
-import { Link } from 'react-router-dom';
-
+import suntechEngineeringConsultantLogo from "../../assets/images/suntech-engineering-consultants.png";
+import suntechConstructionEngineeringConsultantLogo from "../../assets/images/suntech-construction-engineering-consultants.png";
+import { Link } from "react-router-dom";
+import { setCurrentCompany } from "../../store/slices/authSlice";
+import { useDispatch } from "react-redux";
 
 const SelectCompanyComponent = () => {
+   const dispatch= useDispatch();
+
+  const handleCompanySelect = (companyName: string) => {
+    dispatch(setCurrentCompany(companyName));
+  };
+
   return (
-    <div className='text-center h-screen bg-gray-200'>
-      
+    <div className="text-center h-full bg-gray-200 min-h-screen">
       <div className="flex justify-evenly items-center pt-20 flex-wrap">
-        <Link to="/company/dashboard" className="relative block mx-4 mb-4 sm:mb-0 w-full sm:w-auto" style={{ maxWidth: '400px' }}>
+        <Link
+          to="/company/dashboard"
+          className="relative block mx-4 mb-4 sm:mb-0 w-full sm:w-auto"
+          style={{ maxWidth: "400px" }}
+          onClick={() => handleCompanySelect("suntech-engineering-consultants")}
+        >
           <img
             src={suntechEngineeringConsultantLogo}
             alt="Suntech Engineering Consultant"
@@ -16,7 +27,12 @@ const SelectCompanyComponent = () => {
           />
         </Link>
 
-        <Link to="/company/dashboard" className="relative block mx-4 w-full sm:w-auto" style={{ maxWidth: '400px' }}>
+        <Link
+          to="/company/dashboard"
+          className="relative block mx-4 w-full sm:w-auto"
+          style={{ maxWidth: "400px" }}
+          onClick={() => handleCompanySelect("suntech-construction-engineering-consultants")}
+        >
           <img
             src={suntechConstructionEngineeringConsultantLogo}
             alt="Suntech Construction Engineering Consultant"
@@ -25,7 +41,7 @@ const SelectCompanyComponent = () => {
         </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SelectCompanyComponent
+export default SelectCompanyComponent;

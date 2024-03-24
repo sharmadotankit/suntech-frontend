@@ -52,7 +52,7 @@ const ClientRegister = () => {
         <thead className="bg-amber-500 text-white">
           <tr>
             <th className="text-left py-2 px-2 uppercase font-semibold">Client Code</th>
-            <th className="text-left py-2 px-2 uppercase font-semibold">Cleint Name</th>
+            <th className="text-left py-2 px-2 uppercase font-semibold">Client Name</th>
             <th className="text-left py-2 px-2 uppercase font-semibold">GST No</th>
             <th className="text-left py-2 px-2 uppercase font-semibold">Billing Address</th>
             <th className="text-left py-2 px-2 uppercase font-semibold">Shipping Address</th>

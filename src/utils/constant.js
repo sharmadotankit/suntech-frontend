@@ -2,7 +2,7 @@ export const offerLetterScopeOfWork = `a) Shop drawing with assembly drawings in
 b) Single part mark drawing in CAD and PDF format,
 c) General Arrangement Drawings showing markup of parts in CAD and PDF format.
 d) Material part wise list stating sizes and weights and hardware reports.
-e) Obtaining the approval from client and consultant (M/s Eurocoustic Products Limited will support during approval process).
+e) Obtaining the approval from client and consultants (M/s Eurocoustic Products Limited will support during approval process).
 f) Fabrication drawings will be prepared from the approved drawings once issued. Major changes in the geometry of girders after submission of fabrication drawings shall be considered as separate item of work and shall be charged extra as approved for main work,`;
 
 
@@ -24,3 +24,10 @@ f) Any other indirect tax imposed by Central State Government or any other autho
 g) Validity of Offer
     Our offer shall remain vald for 45 days from the date of this offer, subject to written`;
 
+
+export const passwordValidationCondition =`
+1. Password must be at least 8 characters long.
+2. Password must contain at least one number.
+3. Password must contain at least one uppercase letter.
+4. Password must contain at least one lowercase letter.
+5. Password must contain at least one special character.`;

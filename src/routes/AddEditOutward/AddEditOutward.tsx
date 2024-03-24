@@ -10,7 +10,7 @@ interface Document {
 export default function AddEditOutward() {
   const [documents, setDocuments] = useState<Document[]>([]);
 
-  let companyName = "suntech-consultant";
+  let companyName = "suntech-consultants";
   const data = [
     {
       id: 1,

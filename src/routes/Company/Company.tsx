@@ -8,7 +8,6 @@ const Company = () => {
             <SideBar>
                 <Outlet />
             </SideBar>
-
         </div>
     );
 };

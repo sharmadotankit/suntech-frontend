@@ -12,7 +12,7 @@ import authSignImage from "../../assets/images/auth-sign.png";
 
 const CreateInvoiceLetter = () => {
   const initialState: InitialStateType = {
-    companyName: "suntech-consultant",
+    companyName: "suntech-consultants",
     scopeOfWork: offerLetterScopeOfWork,
     title: "",
     description: "",

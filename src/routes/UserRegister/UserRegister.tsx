@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -23,6 +23,8 @@ const UserRegister = () => {
     firstName: "",
     lastName: "",
     status: "active",
+    token: "",
+    _id: "",
   });
   const [error, setError] = useState("");
   const [userList, setUserList] = useState<UserType[]>([]);
@@ -53,7 +55,7 @@ const UserRegister = () => {
     const hasSymbols = /[!@#$%^&*()_+[\]{};':"\\|,.<>/?-]/.test(password);
 
     return (
-      password.length >= minLength &&
+      password?.length >= minLength &&
       hasUpperCase &&
       hasLowerCase &&
       hasNumbers &&
@@ -90,7 +92,21 @@ const UserRegister = () => {
       const data = { ...userData, email: userData.email.trim().toLowerCase() };
 
       const createUserResponse = await createUser(user.token, data);
-      console.log("createUserResponse", createUserResponse);
+      if (createUserResponse.status) {
+        toast.success(createUserResponse?.message);
+        if (!userData._id) {
+          setUserList([...userList, createUserResponse.data]);
+        }
+        setUserData({
+          email: "",
+          password: "",
+          firstName: "",
+          lastName: "",
+          status: "active",
+          token: "",
+          _id: "",
+        });
+      }
     } catch (err: any) {
       console.log(err);
       toast.error(err.message);
@@ -116,10 +132,9 @@ const UserRegister = () => {
     fetchUsers();
   }, []);
 
-  // const handleEditAdminUser = (adminUserToBeEdited) => {
-  //     localStorage.setItem("adminUserToBeEdited", JSON.stringify(adminUserToBeEdited));
-  //     navigate('/admin/edit-admin-user');
-  // }
+  const handleEditUser = (id: string | undefined) => {
+    setUserData(userList.filter((user) => user._id === id)[0]);
+  };
 
   return (
     <div>
@@ -264,7 +279,7 @@ const UserRegister = () => {
             className="bg-amber-500 text-white px-4 py-2 rounded-md hover:bg-amber-600 p-3 cursor-pointer hover:bg-amber-500 transition duration-100 ease-in-out block mx-auto mb-4"
             onClick={handleCreateUser}
           >
-            Create User
+            {userData._id ? "Edit User" : "Create User"}
           </button>
         </div>
       </div>
@@ -284,6 +299,9 @@ const UserRegister = () => {
             <th className="text-left py-2 px-2 uppercase font-semibold">
               Status
             </th>
+            <th className="text-left py-2 px-2 uppercase font-semibold">
+              Edit
+            </th>
           </tr>
         </thead>
         <tbody className="divide-y divide-amber-300">
@@ -294,6 +312,15 @@ const UserRegister = () => {
                 <td className="py-2 px-2">{item.lastName}</td>
                 <td className="py-2 px-2">{item.email}</td>
                 <td className="py-2 px-2">{item.status}</td>
+                <td className="py-2 px-2">
+                  {" "}
+                  <button
+                    className="bg-amber-500 text-white px-4 py-2 rounded-md hover:bg-amber-600 p-3 cursor-pointer hover:bg-amber-500 transition duration-100 ease-in-out block mx-auto mb-4"
+                    onClick={() => handleEditUser(item._id)}
+                  >
+                    Edit
+                  </button>
+                </td>
               </tr>
             ))}
         </tbody>

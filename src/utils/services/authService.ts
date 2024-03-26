@@ -37,7 +37,7 @@ export const loginUser = (
 export const createUser = (
   token: string,
   data: createUserType
-): Promise<AxiosResponse> => {
+): any => {
   return new Promise(async (resolve, reject) => {
     try {
       let headers = {

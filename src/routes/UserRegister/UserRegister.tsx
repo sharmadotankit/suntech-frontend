@@ -91,7 +91,7 @@ const UserRegister = () => {
 
       const data = { ...userData, email: userData.email.trim().toLowerCase() };
 
-      const createUserResponse = await createUser(user.token, data);
+      const createUserResponse = await createUser(user?.token, data);
       if (createUserResponse.status) {
         toast.success(createUserResponse?.message);
         if (!userData._id) {
@@ -115,7 +115,7 @@ const UserRegister = () => {
 
   const fetchUsers = async () => {
     try {
-      const userListResponse = await getUsers(user.token);
+      const userListResponse = await getUsers(user?.token);
       console.log(userListResponse);
       if (userListResponse.status) {
         setUserList(userListResponse.data);

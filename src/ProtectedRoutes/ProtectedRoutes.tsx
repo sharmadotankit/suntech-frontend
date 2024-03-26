@@ -9,7 +9,7 @@ const ProtectedRoutes: React.FC = () => {
   
   const location = useLocation();
   const user = useSelector(selectUser);
-  const token = user.token;
+  const token = user?.token;
   const isLoggedIn = user.isLoggedIn;;
 
   let auth: boolean;

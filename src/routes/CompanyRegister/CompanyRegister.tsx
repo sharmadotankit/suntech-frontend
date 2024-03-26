@@ -37,7 +37,7 @@ const CompanyRegister = () => {
 
   const fetchCompanyData = async()=>{
     try{
-      const companyData = await getCompanyData(user.token,selectedCompany);
+      const companyData = await getCompanyData(user?.token,selectedCompany);
     }catch(err:any){
       console.log("Error fetching company data",err);
     }
